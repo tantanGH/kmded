@@ -45,10 +45,12 @@ KMDED.X はできるだけタイミングを厳密に取るために、Timer-A/D
 また、KMDファイルと同じ主ファイル名で以下の形式のPCMデータがあれば、それを読み込んで実際に音を聴きながら編集作業を行うことができます。
 
 - .pcm (X68k MSM6258V ADPCM 15.625kHz mono)
-- .m32/.m44/.m48 (16bit signed PCM mono)
-- .s32/.s44/.s48 (16bit signed PCM stereo)
+- .m32/.m44/.m48 (16bit signed big endian PCM mono)
+- .s32/.s44/.s48 (16bit signed big endian PCM stereo)
 
 いずれの形式であっても、8bit 15.625kHz mono PCMデータに変換してメモリ上に抱えますので、読み込み負担の小さい .pcm か .m32 形式に NOZさんの PCM3PCM.X などで事前に変換しておくのをお勧めします。
+
+メモリは12MBフル実装してあることが前提となりますw
 
 ---
 
