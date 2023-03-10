@@ -3,7 +3,7 @@ KMD Track Editor for X680x0/Human68k
 
 KMD歌詞データ編集に特化したステップ入力式のシーケンサ風エディタです。
 
-KMDデータはSMR.X作者のYas氏により提案されたフォーマットで、以下のプログラムでPCM曲再生時にタイミングを合わせた歌詞表示に利用できます。
+KMDデータフォーマットはSMR.X作者のYas氏により提案されたもので、以下のプログラムでPCM曲再生時にタイミングを合わせた歌詞表示に利用できます。
 
 * SMR.X (1997年最終版)
 * [MP3EXP.X](https://github.com/tantanGH/mp3exp)
