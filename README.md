@@ -43,6 +43,7 @@ Human68k付属の KEY.SYS (KEY.X) でキーバインドを標準から変更し�
 (カーソル左右、BS/DELなど) 特段の理由がなければ KEY.SYS は組み込まないか標準に戻してからご利用ください。
 
 参考：標準状態のキーバインド
+
 <img src='images/kmded6.png' width='600'/>
 
 ---
