@@ -50,7 +50,7 @@ KMDED.X はできるだけタイミングを厳密に取るために、Timer-A/D
 
 いずれの形式であっても、8bit 15.625kHz mono PCMデータに変換してメモリ上に抱えますので、読み込み負担の小さい .pcm か .m32 形式に NOZさんの PCM3PCM.X などで事前に変換しておくのをお勧めします。
 
-メモリは12MBフル実装してあることが前提となりますw
+そういうことでメモリは12MBフル実装してあることがほぼ前提となりますw
 
 ---
 
@@ -255,7 +255,7 @@ F1(IMPORT)機能を使ってあらかじめテキストファイルに打ち込�
 ### Special Thanks
 
 * KMDデータ資料およびサンプルデータ提供 thanks to かきうちさん
-* デバック協力 thanks to X68PROさん
+* デバッグ協力 thanks to X68PROさん
 * xdev68k thanks to ファミべのよっしんさん
 * HAS060.X on run68mac thanks to YuNKさん / M.Kamadaさん / GOROmanさん
 * HLK301.X on run68mac thanks to SALTさん / GOROmanさん
