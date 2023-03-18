@@ -28,6 +28,19 @@ KMDED.X を動作させるには phillyさんの PCM8A.X が必要になりま�
 
 ---
 
+### INS(挿入)モードに関して
+
+KMDED.X は起動時にINSモードをONにします。ただし、ASK68Kで日本語入力モードに入るとINSモードではなくなってしまいます。これはASK68Kの既知の問題になります。
+この問題はM.Kamada-sanの KeyWitch.X を -a オプションをつけて組み込むことで回避できます。
+
+    KeyWitch.X -a
+
+KeyWitch.X は X68000 LIBRARYからダウンロードできます。
+
+[KeyWitch.X](http://retropc.net/x68000/software/system/key/keywitch/)
+
+---
+
 ### 割り込みに関して
 
 KMDED.X はできるだけタイミングを厳密に取るために、Timer-A/D の割り込みを両方とも使用します。これらの割り込みを使う常駐プログラムなどと一緒に動作させることはできません。
@@ -268,7 +281,7 @@ F1(IMPORT)機能を使ってあらかじめテキストファイルに打ち込�
 * xdev68k thanks to ファミべのよっしんさん
 * HAS060.X on run68mac thanks to YuNKさん / M.Kamadaさん / GOROmanさん
 * HLK301.X on run68mac thanks to SALTさん / GOROmanさん
-* XEiJ thanks to M.Kamadaさん
+* XEiJ / KeyWitch.X thanks to M.Kamadaさん
 * XM6 TypeG thanks to PI.さん / GIMONSさん
 * PCM8A.X thanks to phillyさん
 
@@ -276,6 +289,7 @@ F1(IMPORT)機能を使ってあらかじめテキストファイルに打ち込�
 
 ### History
 
+* 0.3.3 (2023/03/18) ... INSモードを有効にした
 * 0.3.2 (2023/03/18) ... イベント歌詞・タグ中の日本語編集中に文字化けすることがあったバグを修正
 * 0.3.1 (2023/03/14) ... イベント歌詞表示消去時のバグ修正
 * 0.3.0 (2023/03/14) ... イベント編集中にsで一つ下の開始時刻-0.15sを、dで一つ下の終了時刻をコピーできるようにした
