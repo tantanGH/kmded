@@ -6,8 +6,9 @@ KMD歌詞データ編集に特化したステップ入力式のシーケンサ�
 KMDデータフォーマットはSMR.X作者のYas氏により提案されたもので、以下のプログラムでPCM曲再生時にタイミングを合わせた歌詞表示に利用できます。
 
 * SMR.X (1997年最終版)
-* [MP3EXP.X](https://github.com/tantanGH/mp3exp)
+* [S44EXP.X](https://github.com/tantanGH/s44exp)
 * [S44BGP.X](https://github.com/tantanGH/s44bgp)
+* [MP3EXP.X](https://github.com/tantanGH/mp3exp)
 
 
 <img src='images/kmded1.png' width='800'/>
@@ -280,6 +281,7 @@ s,d,eのショートカットキーを活用すると、イベント終了時刻
 
 ### History
 
+* 0.3.5 (2023/04/01) ... X68000Zで動かした時、終了時に画面にゴミが残るのを修正
 * 0.3.4 (2023/03/19) ... BS,DELキーで数値を削除した後1桁しか入力できなくなっていたバグを修正 インポートファイル名で'-'の入力を許可した
 * 0.3.3 (2023/03/18) ... INSモードを有効にした
 * 0.3.2 (2023/03/18) ... イベント歌詞・タグ中の日本語編集中に文字化けすることがあったバグを修正
